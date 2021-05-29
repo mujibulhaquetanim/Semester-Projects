@@ -1,1 +1,1 @@
-# Prime
+This Repo contains college tasks.
