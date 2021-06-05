@@ -1,5 +1,6 @@
 import java.awt.*;
 import java.awt.event.*;
+import java.awt.Color;
 import java.applet.*;
 
 /*<applet code="DivisionExample"width=230 height=250></applet>*/
@@ -59,8 +60,10 @@ public class DivisionExample extends Applet implements ActionListener {
 			}
 		}
 	}
-
+	
 	public void paint(Graphics g) {
+		g.drawString(" ", 200, 100);
+		setBackground(Color.blue);
 		g.drawString(msg, 30, 70);
 	}
 }
