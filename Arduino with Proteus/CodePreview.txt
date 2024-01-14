@@ -1,0 +1,26 @@
+int led= 13;
+int led1=12;
+int value;
+float volt;
+
+void setup(){
+  Serial.begin(9600);
+  pinMode(led,OUTPUT);
+  pinMode(led1,OUTPUT);
+}
+void loop(){
+  value = analogRead(A0);
+  volt = value*0.004;
+  Serial.println(volt);
+  if(volt<2.5)
+  {
+    digitalWrite(led,LOW);
+    digitalWrite(led1,HIGH);
+    
+  }
+  else
+  {
+    digitalWrite(led,HIGH);
+    digitalWrite(led1,HIGH);
+  }
+}
